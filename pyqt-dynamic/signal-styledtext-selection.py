@@ -21,13 +21,9 @@ class FontSelectionDialog(QDialog):
         self.setWindowIcon(QIcon("icons/icon.png"))
 
     def select_font(self):
-        font_dialog = FontSelectionDialog(self)
-        font_index = font_dialog.font_combo.findText(self.font.family())
-        font_dialog.font_combo.setCurrentIndex(font_index)
-
-        if font_dialog.exec_():
-            self.font = QFont(font_dialog.font_combo.currentText(), 10)
-            self.label.setText(self.text)
+        font, ok = QFontDialog.getFont(self.font, self, "Select Font")
+        if ok:
+            self.font = font
             self.label.setFont(self.font)
 
 

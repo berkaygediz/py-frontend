@@ -5,7 +5,6 @@ import sys
 
 app = QApplication([])
 
-# Create the main window widget
 window = QWidget()
 window.setWindowTitle("Sample Area")
 
