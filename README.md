@@ -1,4 +1,4 @@
-# PyQt5 & Python 3.6 - GUI
+# Python 3.6 & PyQt5 - Frontend
 
 ## Installation
 
@@ -9,7 +9,7 @@ pip install PyQt5
 ## Usage
 
 ```
-cd pyqt-works
+cd py-frontend
 ```
 
 ```
